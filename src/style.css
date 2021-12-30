@@ -13,7 +13,14 @@ h1,
 p {
   font-family: inherit;
 }
-
+h2 {
+  padding: 5px 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  line-height: 38px;
+  flex: 1 0 auto;
+}
 /* Include the padding and border in an element's total width and height */
 
 /* Remove margins and padding from the list */
