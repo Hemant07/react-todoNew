@@ -1,14 +1,19 @@
 import React from 'react';
 import './todoheader.css';
+// newElementHandler = (e) => {
+//   return '';
+// };
+
 const HeaderTodo = () => {
   return (
-    <div id="myDIV" className="header">
+    // <form id="myDIV" className="header" onClick={newElementHandler}>
+    <form id="myDIV" className="header">
       <h2 style={{ margin: '5px' }}>My To Do List</h2>
       <input type="text" id="myInput" placeholder="Title..." />
-      <span onclick="newElement()" className="addBtn">
+      <button type="submit" className="addBtn">
         Add
-      </span>
-    </div>
+      </button>
+    </form>
   );
 };
 export default HeaderTodo;
