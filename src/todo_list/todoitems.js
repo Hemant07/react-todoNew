@@ -1,7 +1,6 @@
 import React from 'react';
 import './todoitems.css';
-const Todolisttems = () => {
-  const todoTitle = 'Hit the gym';
-  return <li>{todoTitle}</li>;
+const Todolisttems = (props) => {
+  return <li>{props.title}</li>;
 };
 export default Todolisttems;
