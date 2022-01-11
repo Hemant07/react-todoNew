@@ -10,6 +10,7 @@ const TodoListHolder = () => {
     { name: 'Read a book' },
     { name: 'Organize office' },
   ];
+
   return (
     <ul id="myUL">
       <Todolisttems title={todoItems[0].name} />
