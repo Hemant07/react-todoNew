@@ -4,7 +4,7 @@ import './todoheader.css';
 //   return '';
 // };
 
-const HeaderTodo = () => {
+const HeaderTodo = (props) => {
   const [enteredTodo, setNewTodo] = useState('');
 
   const titleChangeHandler = (event) => {
@@ -16,6 +16,7 @@ const HeaderTodo = () => {
       newTitle: enteredTodo,
     };
     console.log(todoData);
+    props.onSaveTodoData(todoData);
     setNewTodo('');
   };
   return (
