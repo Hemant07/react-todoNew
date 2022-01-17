@@ -23,12 +23,7 @@ export default function App() {
     <div>
       <HeaderTodo onSaveTodoData={onSaveHandler} />
       <div>
-        <TodoListHolder todoName={todoItems[0].name} />
-        <TodoListHolder todoName={todoItems[1].name} />
-        <TodoListHolder todoName={todoItems[2].name} />
-        <TodoListHolder todoName={todoItems[3].name} />
-        <TodoListHolder todoName={todoItems[4].name} />
-        <TodoListHolder todoName={todoItems[5].name} />
+        <TodoListHolder todoNames={todoItems} />
       </div>
     </div>
   );

@@ -3,6 +3,6 @@ import './todoitems.css';
 const Todolisttems = (props) => {
   const [title, setTitle] = useState(props.title);
 
-  return <li></li>;
+  return <li>{props.value}</li>;
 };
 export default Todolisttems;
