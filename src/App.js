@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import HeaderTodo from './header/todoheader';
 import TodoListHolder from './todo_list/todoListHolder';
@@ -11,7 +11,9 @@ export default function App() {
     { name: 'Read a book' },
     { name: 'Organize office' },
   ];
-  const onSaveHandler = (enteredDataHandler) => {
+  const [inputItem, setInputItem] = useState('Hello world ');
+  const onSaveHandler = (event) => {
+    //setInputItem(event.target.value);
     const todoListData = {
       ...enteredDataHandler,
       id: Math.random().toString(),
@@ -20,12 +22,14 @@ export default function App() {
   return (
     <div>
       <HeaderTodo onSaveTodoData={onSaveHandler} />
-      <TodoListHolder todoName={todoItems[0].name} />
-      <TodoListHolder todoName={todoItems[1].name} />
-      <TodoListHolder todoName={todoItems[2].name} />
-      <TodoListHolder todoName={todoItems[3].name} />
-      <TodoListHolder todoName={todoItems[4].name} />
-      <TodoListHolder todoName={todoItems[5].name} />
+      <div>
+        <TodoListHolder todoName={todoItems[0].name} />
+        <TodoListHolder todoName={todoItems[1].name} />
+        <TodoListHolder todoName={todoItems[2].name} />
+        <TodoListHolder todoName={todoItems[3].name} />
+        <TodoListHolder todoName={todoItems[4].name} />
+        <TodoListHolder todoName={todoItems[5].name} />
+      </div>
     </div>
   );
 }
