@@ -13,7 +13,7 @@ export default function App() {
   ];
   const [inputItem, setInputItem] = useState('Hello world ');
   const onSaveHandler = (event) => {
-    //setInputItem(event.target.value);
+    
     const todoListData = {
       ...enteredDataHandler,
       id: Math.random().toString(),
