@@ -12,11 +12,7 @@ const HeaderTodo = (props) => {
   };
   const submitHandler = (event) => {
     event.preventDefault();
-    const todoData = {
-      newTitle: enteredTodo,
-    };
-    console.log(todoData);
-    props.onSaveTodoData(todoData);
+    props.onSaveTodoData(enteredTodo);
     setNewTodo('');
   };
   return (
