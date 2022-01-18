@@ -11,7 +11,7 @@ export default function App() {
     { id: 5, name: 'Read a book' },
     { id: 6, name: 'Organize office' },
   ]);
-  const [inputItem, setInputItem] = useState('Hello world ');
+
   const onSaveHandler = (name) => {
     setTodoItems([
       ...todoItems,
